@@ -1,3 +1,4 @@
+/*class for body of page.   Children will inherit without further class specification*/
 body {
     background-color: #eeeeee;
     height: 100%;
@@ -6,6 +7,7 @@ body {
 
 }
 
+/* id for header.  ID becuase it is only used once on each page, by one element */
 #header {
 	margin-left: 250px;
 	margin-right: 250px;
@@ -13,8 +15,12 @@ body {
 	margin-bottom:  0px;
 	background-color: black;
 	height: 100px;
+	position: fixed;
+	top: 0;
+	width: 780px;
 }
 
+/* specific id detail for h1 elements within header element*/
 #header h1 {
 
 	font-family: 'Courier New', Courier;
@@ -22,12 +28,40 @@ body {
 	font-weight: 500;
 	color: white;
 	text-align: left;
-	margin: 0px;
-	margin-bottom:  0px;
-	padding-top: 15px;
+   	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	display: inline-block;
+}
+
+#header a {
+	color: white;
+	text-decoration: none;
 }
 
 
+ul.nav{
+	padding: 5px;
+	margin: 0;
+	list-style: none;
+	margin-left: 250px;
+    display: inline-block;
+}
+
+li.nav {
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.nav img {
+	height: 45px;
+	width: 45px;
+	background: white;
+}
+
+
+/*id for rest of page, only used once*/
 
 #overlay {
 	background-color: #fbfbfb;
@@ -35,31 +69,49 @@ body {
 	margin-right: 250px;
 	margin-top: 0px;
 	min-height: 600px;
+	padding-top: 100px;
+
 }
 
-/* now I have to admit I'm confused as to why the h1 below changes the #header h1 aboove. */
-.blog_title {
+/* class for all elements withing h1 blog title to adopt */
+h1.blog_title {
     color: black;
     text-align: center;
     margin-top: 0;
     padding-top: 15px;
     padding-left: 5px;
     text-align: left;
-    font-family: "Courier"
+    font-family: "Courier";
 }
-
-.publication_details {
-	font-family: "Arial";
+/** class for pub details, specifically applying to <p> **/
+.publication_details p {
+	font-family: "Courier";
 	font-size: 12px;
 	margin-top: 0;
-}
-
-.tags {
 	display: inline;
 }
 
+/**apply tags class only to ul element, not to child elements **/
+ul.tags {
+	padding-left: 5px;
+	list-style-type: none
+	margin: 0px;
+	display: inline;
+}
+
+
+.tags li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0;
+	font-family: "Courier";
+	color: white;
+	font-size: 12px;
+	background-color: black;
+}
+
 p {
-    font-family: "Helvetica";
+    font-family: "Courier";
     font-size: 15px;
 }
 
@@ -69,3 +121,5 @@ div.blog-post {
 	margin-right: 250px;
 	margin-bottom: 15px;
 }
+
+
