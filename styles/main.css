@@ -13,15 +13,14 @@ body {
 
 /* id for header.  ID becuase it is only used once on each page, by one element */
 #header {
-    margin-left: 19.5%;
-    margin-right: 19.5%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: black;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    width: 61%;
+    height: initial;
+    width: 70%;
 }
 
 /* specific id detail for h1 elements within header element*/
@@ -47,12 +46,15 @@ ul.nav{
 	padding: 5px;
 	margin: 0;
 	list-style: none;
-	margin-left: 250px;
+
     display: inline-block;
+    position: fixed;
+    top: 3%;
+    right: 20%;
 }
 
 li.nav {
-	display: inline;
+	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -67,12 +69,13 @@ li.nav {
 /*id for rest of page, only used once*/
 
 #overlay {
-	background-color: #fbfbfb;
-	margin-left: 19.5%;
-	margin-right: 19.5%;
-	margin-top: 0px;
-	min-height: 100%;
-	padding-top: 100px;
+    background-color: #fbfbfb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    min-height: 100%;
+    padding-top: 2%;
+    width: 70%;
 
 }
 
@@ -85,6 +88,7 @@ h1.blog_title {
     padding-left: 5px;
     text-align: left;
     font-family: "Courier";
+    font-size: 150%;
 }
 /** class for pub details, specifically applying to <p> **/
 .publication_details p {
@@ -136,7 +140,7 @@ h2 {
 
 .divider img {
     height: 2em;
-    width: 45em;
+    width: 100%;
     margin-top: 30px;
 }
 
