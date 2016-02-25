@@ -125,9 +125,19 @@ div.blog-post {
 	margin-bottom: 15px;
 }
 
+.blog-post a {
+	color: black;
+}
+
 h2 {
 	font-family: 'Courier';
 	font-weight: 400;
+}
+
+.divider img {
+    height: 2em;
+    width: 45em;
+    margin-top: 30px;
 }
 
 
