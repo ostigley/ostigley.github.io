@@ -1,4 +1,13 @@
 /*class for body of page.   Children will inherit without further class specification*/
+
+/*
+
+* {
+   outline: 1px solid red !important;
+}  
+
+*/
+
 html {
 	height: 100%
 }
@@ -26,7 +35,7 @@ body {
 /* specific id detail for h1 elements within header element*/
 #header h1 {
     font-family: 'Courier New', Courier;
-    font-size: 350%;
+    font-size: 3rem;
     font-weight: 500;
     color: white;
     text-align: left;
@@ -46,50 +55,23 @@ ul.nav{
 	padding: 5px;
 	margin: 0;
 	list-style: none;
-
-    display: inline-block;
-    position: fixed;
-    top: 3%;
-    right: 20%;
+    float: right;
 }
 
 li.nav {
-	display: inline-block;
+	display: inline-flex;
 	padding-left: 5px;
 	padding-right: 5px;
 }
 
 .nav img {
-	height: 45px;
-	width: 45px;
+	height: 3em;
+	width: 3em;
 	background: white;
 }
 
 
-/*id for rest of page, only used once*/
 
-#overlay {
-    background-color: #fbfbfb;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    min-height: 100%;
-    padding-top: 2%;
-    width: 70%;
-
-}
-
-/* class for all elements withing h1 blog title to adopt */
-h1.blog_title {
-    color: black;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 15px;
-    padding-left: 5px;
-    text-align: left;
-    font-family: "Courier";
-    font-size: 150%;
-}
 /** class for pub details, specifically applying to <p> **/
 .publication_details p {
 	font-family: "Courier";
@@ -116,32 +98,88 @@ ul.tags {
 	font-size: 12px;
 	background-color: black;
 }
+/*Styling for content in side blogs.    Make classes more next week*/
 
-p {
+
+#overlay {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    min-height: 100%;
+    padding-top: 2%;
+    width: 70%;
+    font-family: "Courier";
+    font-size: 15px;
+
+}
+
+h1.blog_title {
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+    text-align: left;
+    font-family: "Courier";
+    font-size: 150%;
+}
+
+h2 {
+    font-family: 'Courier';
+    font-weight: 400;
+}
+p  {
     font-family: "Courier";
     font-size: 15px;
 }
 
-div.blog-post {
-	margin-left: 250px;
+img {
+    margin: auto;
+    max-width: 40em;
+    display: block;
+}
+
+/*****************/
+/* Class for posts on index page  */
+div.post {
+    max-width: 90%;
+	margin-left: auto;
 	margin-top: 15px;
-	margin-right: 250px;
+	margin-right: auto;
 	margin-bottom: 15px;
 }
 
-.blog-post a {
+.post a {
 	color: black;
+    display: inline;
+}
+.post p {
+    font-size: 20px;
+    font-weight: 700;
 }
 
-h2 {
-	font-family: 'Courier';
-	font-weight: 400;
-}
+/***********************************/
 
+/* Type writter divider image propoerties*/
 .divider img {
-    height: 2em;
-    width: 100%;
-    margin-top: 30px;
+    height: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
+
+.divider {
+    padding-top: 15px;
+}
+/********************************/
+
+/*  styling for iframe video of shereef */
+iframe {
+    border-style: none;
+    display: block;
+    margin: auto;
+}
+
 
 
