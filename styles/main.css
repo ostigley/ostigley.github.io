@@ -1,30 +1,14 @@
-/*class for body of page.   Children will inherit without further class specification*/
+/*  
+####################################
 
-/*
-
-* {
-   outline: 1px solid red !important;
-}  
-
+      Global styles
+  
+####################################
 */
 
 
-/* Media queries*/
-
-@media only screen and (max-width: 750px) {
-    #header {
-        min-width: 100%;
-    }
-    #overlay {
-        min-width: 100%;
-    }
-}
-
-
-/***************/
-
 html {
-	height: 100%
+    height: 100%
 }
 
 body {
@@ -35,7 +19,25 @@ body {
 
 }
 
-/* id for header.  ID becuase it is only used once on each page, by one element */
+h2 {
+    font-family: 'Courier';
+    font-weight: 400;
+}
+p  {
+    font-family: "Courier";
+    font-size: 15px;
+    padding-left: 1em;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+
+/*
+####################################
+
+        id for header.  ID becuase it is only used once on each page, by one element 
+  
+####################################
+*/
 #header {
     display: block;
     margin-left: auto;
@@ -47,7 +49,7 @@ body {
     width: 70%;
 }
 
-/* specific id detail for h1 elements within header element*/
+
 #header h1 {
     font-family: 'Courier New', Courier;
     font-size: 3rem;
@@ -61,59 +63,78 @@ body {
 }
 
 #header a {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 
 ul.nav{
-	padding: 5px;
-	margin: 0;
-	list-style: none;
+    padding: 5px;
+    margin: 0;
+    list-style: none;
     float: right;
 }
 
 li.nav {
-	display: inline-flex;
-	padding-left: 5px;
-	padding-right: 5px;
+    display: inline-flex;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .nav img {
-	height: 3em;
-	width: 3em;
-	background: white;
+    height: 3em;
+    width: 3em;
+    background: white;
 }
 
 
 
-/** class for pub details, specifically applying to <p> **/
+/**   
+####################################
+
+        class for pub details, specifically applying to <p> 
+
+####################################
+*/
 .publication_details p {
-	font-family: "Courier";
-	font-size: 12px;
-	margin-top: 0;
-	display: inline;
+    font-family: "Courier";
+    font-size: 12px;
+    margin-top: 0;
+    display: inline;
 }
 
-/**apply tags class only to ul element, not to child elements **/
+/*
+####################################
+
+        apply tags class only to ul element, not to child elements 
+
+####################################
+*/
 ul.tags {
-	padding-left: 5px;
-	list-style-type: none
-	margin: 0px;
-	display: inline;
+    padding-right: 0.4em;
+    padding-left:0em;
+    list-style-type: none;
+    margin: 0px;
+    display: inline;
 }
 
 
 .tags li {
-	display: inline-block;
-	padding: 10px;
-	margin: 0;
-	font-family: "Courier";
-	color: white;
-	font-size: 12px;
-	background-color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    font-family: "Courier";
+    color: white;
+    font-size: 12px;
+    background-color: black;
 }
-/*Styling for content in side blogs.    Make classes more next week*/
+/*  
+####################################
+
+        Styling for content in side blogs.    Make classes more next week
+
+####################################
+*/
 
 
 #overlay {
@@ -122,32 +143,28 @@ ul.tags {
     margin-right: auto;
     margin-top: 0px;
     min-height: 100%;
-    padding-top: 2%;
     width: 70%;
     font-family: "Courier";
     font-size: 15px;
 
 }
 
-h1.blog_title {
-    color: black;
+#intro {
     text-align: center;
-    margin-top: 0;
-    padding-top: 15px;
-    padding-left: 5px;
-    text-align: left;
-    font-family: "Courier";
-    font-size: 150%;
+    margin:0;
 }
 
-h2 {
-    font-family: 'Courier';
-    font-weight: 400;
-}
-p  {
+#intro h1 {
+    color: black;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
     font-family: "Courier";
-    font-size: 15px;
+    font-size: 2em;
 }
+
+
 
 img {
     margin: auto;
@@ -155,8 +172,14 @@ img {
     display: block;
 }
 
-/*****************/
-/* Class for posts on index page  */
+
+/*   
+####################################
+
+        Class for posts on index page  
+
+####################################
+*/
 div.post {
     max-width: 90%;
 	margin-left: auto;
@@ -172,11 +195,17 @@ div.post {
 .post p {
     font-size: 20px;
     font-weight: 700;
+    padding: 0;
+    text-indent: 0;
 }
 
-/***********************************/
+/*  
+####################################
 
-/* Type writter divider image propoerties*/
+     Divider image propoerties  
+
+####################################
+*/
 .divider img {
     height: 4em;
     margin-left: auto;
@@ -186,15 +215,61 @@ div.post {
 
 .divider {
     padding-top: 15px;
+    background-color: #eeeeee;
 }
-/********************************/
 
-/*  styling for iframe video of shereef */
+/*  
+####################################
+
+styling for iframe (video of shereef )
+
+####################################
+*/
+
+
+
+
 iframe {
     border-style: none;
     display: block;
     margin: auto;
 }
 
+/*  
+####################################
+
+        Media queries
+  
+####################################
+*/
+
+@media only screen and (max-width: 500px) {
+    #header {
+        min-width: 100%;
+        text-align: center;
+    }
+    #overlay {
+        min-width: 100%;
+    }
+    ul.nav {
+    float: none;
+    text-align: center;
+}
 
 
+
+/*
+####################################
+
+Tools for wire framing and developement only 
+
+####################################
+*/
+
+/*
+
+* {
+   outline: 1px solid red !important;
+}  
+
+*/
