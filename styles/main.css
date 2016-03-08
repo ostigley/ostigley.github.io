@@ -7,7 +7,7 @@ _______________________________________________
 -Globals
 
 -Media Queries
-
+TBC
 */
 
 
@@ -58,7 +58,6 @@ _______________________________________________*/
 .ext-links img {
     padding: 0;
     margin: 0;
-    /*max-height: 3rem;*/
 
 }
 
@@ -85,6 +84,7 @@ _______________________________________________
     display: block;
     text-align: center;
     padding-top: 1rem;
+    color: #545E67;
 }
 
 
@@ -94,12 +94,10 @@ _______________________________________________
     width: 100%;
     list-style: none;
     flex-wrap: wrap;
-    /*font-size: 3.5rem;*/
     color: #545E67;
 }
 
 h1 {
-    /*font-size: 6rem;*/
     color: #545E67;
     border-bottom: solid 1px;
     width: auto;
@@ -120,6 +118,10 @@ _______________________________________________
     color: #F7D100;
 }
 
+a {
+    color: #F7D100;
+}
+
 /*_______________________________________________
 
 Blog list 
@@ -136,10 +138,34 @@ _______________________________________________
     list-style: none;
 }
 
-.bloglist p {
-    /*font-size: 0.8rem;*/
+
+
+#box {
+    margin: auto;
+    display: block;
 }
 
+
+/*_______________________________________________
+
+Blog content 
+_______________________________________________
+*/
+
+
+.blogcontent p {
+    font-size: 1rem;
+}
+
+.blogcontent {
+    color: #545E67;
+}
+
+.blogcontent ul {
+    list-style: square;
+    font-size: 1rem;
+    padding-left: 3rem;
+}
 
 /*
 _______________________________________________
@@ -250,10 +276,5 @@ _______________________________________________
     }
 
 
-/*    .row {
-        width: 100%;
-    }
-    .container {
-        width: 100%;
-    }*/
+
 }
