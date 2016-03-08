@@ -27,7 +27,6 @@ html {
 body {
     font-family: courier;
     background-color: #FFFFFF;
-
 }
 
 
@@ -45,10 +44,17 @@ _______________________________________________*/
 }
 .ext-links ul {
     margin-right: auto;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0;
+/*    position: fixed;
+    z-index: -1;*/
+
 }
 
 .ext-links li {
@@ -122,6 +128,69 @@ a {
     color: #F7D100;
 }
 
+
+#breathing-button {
+    /*width: 270px;*/
+    /*padding: 20px;*/
+    /*margin: 50px auto;*/
+    /*border: 1px solid #d1d1d1;*/
+    -webkit-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;
+    /*font-size: 24px;*/
+    /*background: #5885cb;*/
+    /*color: #fff;*/
+    -webkit-font-smoothing: antialiased;
+    /*border-radius: 3px;*/
+    text-align: center;    
+    }
+
+    @-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
 /*_______________________________________________
 
 Blog list 
@@ -156,6 +225,9 @@ _______________________________________________
 .blogcontent p {
     font-size: 1rem;
 }
+.blogcontent p:hover {
+    background-color: white;
+}
 
 .blogcontent {
     color: #545E67;
@@ -166,6 +238,28 @@ _______________________________________________
     font-size: 1rem;
     padding-left: 3rem;
 }
+
+
+
+/*
+_______________________________________________
+
+back links
+_______________________________________________
+*/
+
+#backlink a {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    padding-left: 1em;
+    color: #545E67;
+    font-size: 1rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+
 
 /*
 _______________________________________________
@@ -196,6 +290,10 @@ _______________________________________________
 
     .ext-links ul {
         justify-content: space-between;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;
         display: flex;
     }
 
@@ -206,6 +304,10 @@ _______________________________________________
     }
 
     .heading ul {
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;
         display: flex;
         font-size: 1rem;
     }
@@ -231,6 +333,10 @@ _______________________________________________
 
     .ext-links ul {
         justify-content: space-between;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;
         display: flex;
     }
 
@@ -242,6 +348,10 @@ _______________________________________________
 
     .heading ul {
         font-size: 1.5rem;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;
         display: flex;
     }
 
@@ -262,6 +372,10 @@ _______________________________________________
 
     .ext-links ul {
         justify-content: space-between;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;
         display: flex;
     }
 
@@ -272,9 +386,13 @@ _______________________________________________
     }
 
     .heading ul {
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;
         display: flex;
     }
 
-
-
 }
+
+
