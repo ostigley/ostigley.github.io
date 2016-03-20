@@ -1,19 +1,26 @@
-var articleContent = document.getElementsByTagName("article")
+//  Change background colour
 
+var col=225;	
+var c=1;
 var changeBcol = function() {
-	var r=Math.floor((Math.random()*255));
-	var b=Math.floor((Math.random()*255));
-	var g=Math.floor((Math.random()*255));
+	col +=c; 
+	var newCol = "rgb("+String(col)+","+String(col)+","+String(col)+")"
+	if (col==255 || col== 224) {
+		c*=-1;
+	};
+	document.getElementsByTagName('body')[0].style.backgroundColor = newCol;
+};
+window.setInterval(changeBcol,600);
 
-	var newCol = "rgb("+String(r)+","+String(g)+","+String(b)+")"
-	console.log(newCol);
-	// if (r>255) {
-	// 	r = 1;
-	// 	g = 1;
-	// 	b = 1;
-	// }
-	articleContent[0].style.backgroundColor = newCol;
+
+var paras = document.getElementsByTagName('p');
+console.log(paras);
+paras.onmouseover = function() {
+	console.log('mouseover')
+	this.style.backgroundColor = "white";
 };
 
-window.setInterval(changeBcol,1000);
+
+
+
 
