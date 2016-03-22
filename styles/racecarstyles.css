@@ -1,0 +1,128 @@
+
+
+
+header h1 {
+text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
+
+
+#main {
+	display: flex;
+}
+
+
+.racer_table {
+  /*background-image: url("../images/grandstand.jpg");
+  background-repeat: no-repeat;
+background-size: cover;*/
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+ 
+}
+
+tbody {
+	background-color: grey;
+
+}
+td {
+	height: 60px;
+	width: 100px;
+}
+
+
+
+.racer_table td.active {
+  background-image: url("racecar/blackcar.png");
+  background-size: cover;
+}
+
+.Player_1 {
+    border-right: yellow 5px;
+    border-right-style: dashed;
+}
+
+
+
+#car1 {
+	height: 50px;
+	width: 50px;
+	background-color: blue;
+}
+
+body {
+
+}
+
+#player1box {
+	margin-left: 70px;
+}
+
+#player2box {
+	margin-right: 70px;
+}
+section.trafficlights {
+    height: 210px;
+    width: 90px;
+    background-color: black;
+    margin-top: 250px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.light1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+
+.light2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+
+.light3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+}
+
+.greenlight {
+	background-color: green;
+}
+.redlight {
+	background-color: red;
+}
+
+.countdownbox {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300px;
+	font-size: 30px;
+}
+
+
