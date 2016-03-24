@@ -6,12 +6,12 @@ text-align: center;
 }
 
 h4 {
-	text-align: center;
+  text-align: center;
 }
 
 
 #main {
-	display: flex;
+  display: flex;
 }
 
 
@@ -27,13 +27,11 @@ background-size: cover;*/
  
 }
 
-tbody {
-	background-color: grey;
 
-}
 td {
-	height: 60px;
-	width: 100px;
+  height: 30px;
+  width: 30px;
+  background-color: grey;
 }
 
 
@@ -43,29 +41,47 @@ td {
   background-size: cover;
 }
 
+
+td.othercars { 
+  background-image: url("racecar/car-4-512.png");
+  background-size: cover;
+  z-index: 1;
+ }
+
 .Player_1 {
     border-right: yellow 5px;
+    border-right-style: dashed;
+}
+
+.Player_2 {
+    border-right: white 5px;
     border-right-style: dashed;
 }
 
 
 
 #car1 {
-	height: 50px;
-	width: 50px;
-	background-color: blue;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
 }
+
+p {
+  font-size: 15px;
+}
+
+
 
 body {
 
 }
 
 #player1box {
-	margin-left: 70px;
+  margin-left: 70px;
 }
 
 #player2box {
-	margin-right: 70px;
+  margin-right: 70px;
 }
 section.trafficlights {
     height: 210px;
@@ -111,18 +127,18 @@ section.trafficlights {
 }
 
 .greenlight {
-	background-color: green;
+  background-color: green;
 }
 .redlight {
-	background-color: red;
+  background-color: red;
 }
 
 .countdownbox {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 300px;
-	font-size: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  font-size: 30px;
 }
 
 
