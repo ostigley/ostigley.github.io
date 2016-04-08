@@ -27,6 +27,7 @@ html {
 body {
     font-family: courier;
     background-color: #f7f7f7;
+
 }
 
 
@@ -82,15 +83,17 @@ _______________________________________________
 */
 
 
-
+#mypic {
+    background-image: url('assets/background-einstein.jpg');
+    background-size: cover;
+}
 
 .heading {
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
-    padding-top: 1rem;
-    color: #545E67;
+    color: white;
 }
 
 
@@ -100,13 +103,17 @@ _______________________________________________
     width: 100%;
     list-style: none;
     flex-wrap: wrap;
-    color: #545E67;
+    color: #/*545E67*/;
 }
 
 h1 {
-    color: #545E67;
+    /*color: #545E67;*/
     border-bottom: solid 1px;
     width: auto;
+}
+
+.header {
+    height: auto;
 }
 
 
@@ -117,6 +124,10 @@ Main
 _______________________________________________
 */
 
+#hessian {
+    background-color: white;
+}
+
 .hide {
     display: none;
 }
@@ -126,6 +137,10 @@ _______________________________________________
     text-align: center;
     font-size: 4rem;
     color: #F7D100;
+}
+
+.main {
+    color: #545E67;
 }
 
 a {
