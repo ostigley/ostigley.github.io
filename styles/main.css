@@ -132,6 +132,15 @@ a {
     color: #F7D100;
 }
 
+.mycontent  {
+    font-size: 1rem;
+}
+.mycontent  a {
+    font-size: 1rem;
+    text-align: left;
+    display: inline-flex;
+}
+
 
 #breathing-button {
     /*width: 270px;*/
