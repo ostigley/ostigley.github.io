@@ -7,18 +7,19 @@ text-align: center;
 
 h4 {
   text-align: center;
+  margin: 0;
 }
 
 
 #main {
-  display: flex;
+  display: block;
 }
 
 
 .racer_table {
-  /*background-image: url("../images/grandstand.jpg");
+  background-image: url("racecar/faraway.png");
   background-repeat: no-repeat;
-background-size: cover;*/
+background-size: cover;
   height: auto;
   width: auto;
   margin-left: auto;
@@ -31,21 +32,20 @@ background-size: cover;*/
 td {
   height: 30px;
   width: 30px;
-  background-color: grey;
+  /*background-color: grey;*/
 }
 
 
 
 .racer_table td.active {
-  background-image: url("racecar/blackcar.png");
+  background-image: url("racecar/xwing.png");
   background-size: cover;
 }
 
 
 td.othercars { 
-  background-image: url("racecar/car-4-512.png");
+  background-image: url("racecar/Tie-Fighter-03-icon.png");
   background-size: cover;
-  z-index: 1;
  }
 
 .Player_1 {
@@ -66,17 +66,15 @@ td.othercars {
   background-color: blue;
 }
 
-p {
-  font-size: 15px;
-}
-
 
 
 body {
-
+  background-color: black;
+  font-family: 'Geostar Fill', cursive;
+  color: yellow;
 }
 
-#player1box {
+#scorebox {
   margin-left: 70px;
 }
 
@@ -139,6 +137,11 @@ section.trafficlights {
   margin-right: auto;
   margin-top: 300px;
   font-size: 30px;
+}
+
+.blaster {
+  background-image: url('racecar/blaster.jpeg');
+  background-size: contain;
 }
 
 

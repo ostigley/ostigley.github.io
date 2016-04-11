@@ -1,6 +1,6 @@
 
 var addCars = function (){ 
-	nextLaneNumber = Math.floor(Math.random()*trackWidth*2).toString();
+	nextLaneNumber = Math.floor(Math.random()*trackWidth).toString();
 	// convert to string and add L for class name. 
 	nextLane = ".L"+nextLaneNumber;
 	// find lane node and add class othercars class.
@@ -12,21 +12,22 @@ var moveCarsDown = function(){
 	var othercars = document.querySelectorAll(".othercars");
 	for(i =0 ; i <othercars.length ; i++) {
 		var carLane = Number(othercars[i].classList[0].slice(1))
-		updatePosition(othercars[i], "down", carLane);
+		updatePosition("down", carLane, othercars[i]);
 	}
 }
 
 var carCrash = function(){
 	var activePositions = document.querySelectorAll('.active');
+	var boomNoise = new Audio('scripts/boomnoise.mp3');
 	for(i=0; i<activePositions.length; i++) {
 		if ( activePositions[i].classList.contains('othercars') ) {
 
-			console.log('car crash!');
-			return finished( players.findPlayer(activePositions[i].classList[1]), true);
+			boomNoise.play();
+			
+			return finished(true);
 		}
 		
 	}
-// players.findPlayer(activePositions[i].classList[1]
 
 }
 

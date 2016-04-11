@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Olly's highway</title>
+	<title>Olly's StarWars</title>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,68 +9,31 @@
 
 	<link rel="stylesheet" type="text/css" href="styles/racecarstyles.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<main>
-		<header>
-			<h1>Motormadness</h1>
-		</header>
 
 		<div id="main">
-			<section id="player1box">
-				<h3>Player 1 Score:</h3>
-				<h4></h4>
-				
-				<section class="trafficlights">
-					<div class="light3"></div>
-					<div class="light2"></div>
-					<div class="light1"></div>
-				</section>
-
+			<section id="scorebox">
+				<h4>Score:</h4>
+				<h4 id="score"></h4>
 			</section>
-
-			<section  class="countdownbox">
-				<h2 class="counter">3</h2>
-				<p>z = left</p>
-				<p>x = forward</p>
-				<p>c = right</p>
-
-			</section>
-
 
 			<table class="racer_table">
 				<tbody>
 				</tbody>
 			</table> 
-		
-			<section class="countdownbox">
-				<h2 class="counter">3</h2>
-				<p>, (coma) = left</p>
-				<p>. (fullstop) = forward</p>
-				<p>/ = right</p>
-			</section>	
-
-			<section id="player2box">
-				<h3>Player 2 Score:</h3>
-				<h4></h4>
-				
-				<section class="trafficlights">
-					<div class="box"></div>
-						<div class="light3"></div>
-						<div class="light2"></div>
-						<div class="light1"></div>
-					</div>
-				</section>
-			</section>
 
 		</main>
+
 	
 			
 
 	</main>
 
 	<script type="text/javascript" src="scripts/buildtrack.js"></script>
-	<script type="text/javascript" src="scripts/racecarscript.js"></script>
+	<script type="text/javascript" src="scripts/racerscript.js"></script>
 	<script type="text/javascript" src="scripts/otherCars.js"></script>
 
 </body>
