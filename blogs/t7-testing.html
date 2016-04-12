@@ -1,0 +1,76 @@
+
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>Oliver Stigley: Scope</title>
+	    
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../scripts/myScripts.js"></script>
+
+	  </head>
+	  
+	  <body>
+			<div id="mypic">
+				<script type="text/javascript" src="../scripts/header.js"></script>
+
+				<div id="backlink"><a href="../blogs/blogs-index.html">back...</a></div>
+		  	  	<section class="container">
+			  
+				  	<div class="row">
+					  	<header class="twelve columns heading">
+						  		<h3>Javscript Scope</h3>
+					  			<h5>Oliver Stigley</h5>
+					  	</header>
+				  	</div>
+
+			  	</section>
+		  	</div>
+
+			<section class="container">
+				<div class="row">
+					<article class="twelve columns blogcontent">
+						<p>12 April 2016</p>
+						<p>
+							There are two types of variable scope in javascript: global scope and local scope.
+						</p>
+
+						<p>
+							Global scope applies to variables that have been declared outside of any function.  They can be accessed by any block of code.  For example <code>var name = “Oliver”;</code> would be declared as global, if it appears outside of a function block.  
+						</p>
+
+						<p>
+							Local scope applies to variables that have been declared inside a function block of code, i.e. in their neighbourhood.  Variables with local scope can be accessed by functions or blocks of code in the same scope or neighbourhood, but not others.  For example, I can play basketball in the east side of town, but I’m forbidden to play in the west.  
+						</p>
+
+						<p>
+							Javascript remembers what local variables can be accessed by which code, by giving it a ‘closure’ reference.  We can think of closure as a parent deciding which children to invite to their child’s birthday party, and which they would rather not associate with.  
+						</p>
+
+						<p>
+							Variables, whether local or global, are declared first, as if they were at the top of a page or script.   Javascript processes all variables before executing other code.    This is true even if the variable is declared inside a conditional statement, or a function block of code.  Variables are all initially given values of ‘undefined’, until they are called.  When they are called, they take on the values assigned to them, but not before. 
+						</p> 
+
+						<p>
+							Interestingly, variables inside function code blocks can be made global, by declaring them without a ‘var’:  <code>name = “Oliver”;</code>.  This variable would be accessed as if it was global, even though it has been declared inside a function which would usually have local scope. 
+						</p>
+
+						<p>
+							Also, the use of ‘let’, allows for scope to be temporarily changed within the block it is called.  For example, say a global variable is defined <code>var name = “Oliver”;</code>.  Then in another block of code, we write <code>let name = “Aidan”;</code>, the <code>name</code> variable will be defined as <code>Aidan</code> in that block, instead of <code>Oliver</code>.  Think of the use of ‘let’ as a temporary amnesia on the previous variable declaration. 
+						</p>
+<br>
+<br>
+ 
+
+					</article>
+				</div>
+			</section>
+		</div>
+	  </body>
+	</html>
