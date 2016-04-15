@@ -240,6 +240,11 @@ _______________________________________________
     list-style: none;
 }
 
+.bloglist {
+    display: inline-table;
+    padding-left: 30px;
+}
+
 
 
 #box {

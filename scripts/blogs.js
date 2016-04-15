@@ -120,4 +120,25 @@ var blogList = {
 		category: "dev",
 		tags: ["scope", "javascript", ""]
 	}, 
+	]
 };
+
+var linkHTML = "<li><a href=\"blogs/%fileName%\">%title%</a>"; 
+var dateHTML = "<p>Date %blogdate%</p></li>";
+
+
+for (var blog in blogList.blogs) {
+	var link = linkHTML.replace("%fileName%", blogList.blogs[blog].fileName);
+	link = link.replace("%title%", blogList.blogs[blog].title);
+	var date = dateHTML.replace("%blogdate%", blogList.blogs[blog].blogdate);
+
+	var DOM = `#${blogList.blogs[blog].category}`
+
+	$(DOM).append(link);
+	$(DOM).append(date);
+
+
+
+}
+
+
