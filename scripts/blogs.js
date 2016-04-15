@@ -3,7 +3,7 @@ var blogList = {
 
 	{
 		title: "Fireside Chat Reflections",
-		fileName: "c1-reflection-blog.html ",
+		fileName: "c1-reflection-blog.html",
 		blogdate: "23 February 2016",
 		category: "human",
 		tags: ["reflection", "EDA"]
@@ -11,113 +11,113 @@ var blogList = {
 
 	{
 		title: "Time & Habits",
-		fileName: "c1-time-and-habits-blog.html ",
+		fileName: "c1-time-and-habits-blog.html",
 		blogdate: "25 February 2016",
 		category: "human",
 		tags: ["habits", "time-management"]
 	}, 
 
 	{
-		title: "",
-		fileName: "c2-emotional-intelligence.html ",
-		blogdate: "",
+		title: "Emotional Intelligence",
+		fileName: "c2-emotional-intelligence.html",
+		blogdate: "2 March 2016",
 		category: "human",
-		tags: []
+		tags: ["emotional Intelligence", "mindfullness", "meditation"]
 	}, 
 
 	{
-		title: "",
-		fileName: "c3-meditation-process.html ",
-		blogdate: "",
+		title: "Thoughts on Meditation",
+		fileName: "c3-meditation-process.html",
+		blogdate: "11 March 2016",
 		category: "human",
-		tags: []
+		tags: ["meditation"]
 	}, 
 
 	{
-		title: "",
-		fileName: "c4-daily-mindfulness.html ",
-		blogdate: "",
+		title: "Mindfulness Conversation",
+		fileName: "c4-daily-mindfulness.html",
+		blogdate: "15 March 2015",
 		category: "human",
-		tags: []
+		tags: ["mindfullness", "listening"]
 	}, 
 
 	{
-		title: "",
-		fileName: "c5-self-confidence.html ",
-		blogdate: "",
+		title: "Self Awareness",
+		fileName: "c5-self-confidence.html",
+		blogdate: "27 March 2016",
 		category: "human",
-		tags: []
+		tags: ["mindfullness", "self awareness", "emotional intelligence"]
 	}, 
 
 	{
-		title: "",
-		fileName: "c6-control.html ",
-		blogdate: "",
+		title: "Self Control",
+		fileName: "c6-control.html",
+		blogdate: "1 April 2016",
 		category: "human",
-		tags: []
+		tags: ["self control", "mindfullness"]
 	}, 
 
 	{
-		title: "",
-		fileName: "c7-motivation.html ",
-		blogdate: "",
+		title: "Motivation",
+		fileName: "c7-motivation.html",
+		blogdate: "7 April 2016",
 		category: "human",
-		tags: []
+		tags: ["happiness", "Motivation", "values"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t2-html-css-dom-p1.html ",
-		blogdate: "",
+		title: "Udacity Reflection",
+		fileName: "t2-html-css-dom-p1.html",
+		blogdate: "1 March 2016",
 		category: "dev",
-		tags: []
+		tags: ["CSS", "DOM", "document object model", "html", "udacity"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t2-html-css-dom-p2.html ",
-		blogdate: "",
+		title: "Udacity Reflection Pt 2",
+		fileName: "t2-html-css-dom-p2.html",
+		blogdate: "2 March 2016",
 		category: "dev",
-		tags: []
+		tags: ["CSS", "DOM", "document object model", "html", "semantic elements", "grid"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t3-design-to-web-blog.html ",
-		blogdate: "",
+		title: "Design to Web",
+		fileName: "t3-design-to-web-blog.html",
+		blogdate: "9 March 2016",
 		category: "dev",
-		tags: []
+		tags: ["process", "wire-frames", "design", "responsiveness", "mobile first"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t4-javascript-basics.html ",
-		blogdate: "",
+		title: "Javascript",
+		fileName: "t4-javascript-basics.html",
+		blogdate: "23 February 2016",
 		category: "dev",
-		tags: []
+		tags: ["javascript", "html", "CSS", "control flow", "array", "object", "function"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t5-problem-solving.html ",
-		blogdate: "",
+		title: "Problem Solving",
+		fileName: "t5-problem-solving.html",
+		blogdate: "25 March 2016",
 		category: "dev",
-		tags: []
+		tags: ["debugging", "problem Solving", "javascript", "function"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t6-js-language.html ",
-		blogdate: "",
+		title: "Javascript Language",
+		fileName: "t6-js-language.html",
+		blogdate: "1 April 2016",
 		category: "dev",
-		tags: []
+		tags: ["syntax", "javascript"]
 	}, 
 
 	{
-		title: "",
-		fileName: "t7-testing.html ",
-		blogdate: "",
+		title: "Javascript Scope",
+		fileName: "t7-testing.html",
+		blogdate: "12 April 2016",
 		category: "dev",
-		tags: []
+		tags: ["scope", "javascript", ""]
 	}, 
 };
