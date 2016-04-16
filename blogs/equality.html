@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Oliver Stigley: Equality</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../scripts/myScripts.js"></script>
+
+	</head>
+
+	<body>
+		<div id="mypic">
+			<script type="text/javascript" src="../scripts/header.js"></script>
+
+			<section class="container">
+
+				<div class="row">
+					<header class="twelve columns heading">
+						<h3>Lightbulb: Equality</h3>
+						<h5>Oliver Stigley</h5>
+					</header>
+				</div>
+
+			</section>
+		</div>
+
+		<section class="container">
+			<div class="row">
+				<article class="twelve columns blogcontent">
+					<p>16 April 2016</p>
+					<p>
+						While learning some javascript testing frameworks this week (Tape), I noted that one of my tests was failing persistently, no matter what I did: <br>
+					</p>
+<pre><code style="font-size: 50%;">test('make Friendly Dates', function (t) {
+	t.equal( makeFriendlyDates(["2017-03-01", "2017-05-05”]), ["March 1st, 2017","May 5th”] );
+	t.end();
+});</code></pre>
+
+
+					<p>
+						The first function makeFriendlyDates was producing the right output, but my test was failing.  Why? Because javascript cannot test the equity of two arrays, that’s why.  For example [1,2,3] == [1,2,3] will return false.  To test array equality, you need to evaluate each index against each other.  As a quick solution, I evaluated <code>array.join(“ “) == array.join(“ “)</code>, turning my arrays in to strings, which then evaluated true.
+					</p>
+
+					<p>
+						Boom!  Each time I learn a new secret that seems so obvious, I get really excited.  The alternative negative approach of “how the hell did I not know about that?  I’m so stupid” is al too easy to fall in to.  Lightbulb moments are amazing!
+					</p>
+					<p>
+						[]==[]
+					</p>
+				</article>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

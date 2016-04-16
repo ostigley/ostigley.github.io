@@ -27,6 +27,7 @@ html {
 body {
     font-family: courier;
     background-color: white;
+    color: #545E67;
 
 }
 
@@ -108,11 +109,9 @@ _______________________________________________
     width: 100%;
     list-style: none;
     flex-wrap: wrap;
-    color: #/*545E67*/;
 }
 
 h1 {
-    /*color: #545E67;*/
     border-bottom: solid 1px;
     width: auto;
 }
@@ -129,12 +128,28 @@ Main
 _______________________________________________
 */
 
+.myheader { 
+    display: block;
+ }
+
+ .blogcat {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #F7D100;
+}
+ }
+
 #whitespace {
     background-color: white;
 }
 
 .hide {
     display: none;
+}
+
+.show {
+    text-decoration: underline;
+    background-color: #F5F5F5;
 }
 
 .main a {
@@ -144,9 +159,7 @@ _______________________________________________
     color: #F7D100;
 }
 
-.main {
-    color: #545E67;
-}
+
 
 a {
     color: #F7D100;
@@ -226,24 +239,25 @@ a {
 }
 /*_______________________________________________
 
-Blog list 
+Blog list / index page
 _______________________________________________
 */
 
 .bloglist a {
     color: #F7D100;
 }
-.bloglist li {
-    display: block;
-    text-align: left;
-    /*font-size: 1rem;*/
-    list-style: none;
+.bloglist p {
+    margin-bottom: 1em;
 }
 
 .bloglist {
     display: inline-table;
     padding-left: 30px;
+    font-size: 1rem;
+
 }
+
+
 
 
 
@@ -267,9 +281,7 @@ _______________________________________________
     background-color: white;
 }
 
-.blogcontent {
-    color: #545E67;
-}
+
 
 .blogcontent ul {
     list-style: square;
@@ -290,7 +302,6 @@ _______________________________________________
     top: 6rem;
     left: 0;
     padding-left: 1em;
-    color: #545E67;
     font-size: 1rem;
     font-weight: 100;
     text-decoration: none;
@@ -319,7 +330,7 @@ _______________________________________________
 
 
 
-/* Larger than phablet */
+/* Normal mobile viewing:  */
 @media (min-width: 300px) {
 /*    body {
         background-color: #95b9ad;
@@ -348,11 +359,14 @@ _______________________________________________
         display: flex;
         font-size: 1rem;
     }
-    .bloglist li {
+    .bloglist  {
         display: block;
-        text-align: center;
-        font-size: 1.1rem;
+        text-align: left;
+        font-size: 1rem;
         list-style: none;
+    }
+    .blogcat {
+        font-size: 1rem;
     }
 
 

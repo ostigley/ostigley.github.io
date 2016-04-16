@@ -1,0 +1,110 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Oliver Stigley: Objects</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../scripts/myScripts.js"></script>
+
+	</head>
+
+	<body>
+		<div id="mypic">
+			<script type="text/javascript" src="../scripts/header.js"></script>
+
+			<section class="container">
+
+				<div class="row">
+					<header class="twelve columns heading">
+						<h3>Objects, Prototypes, Inheritance</h3>
+						<h5>Oliver Stigley</h5>
+					</header>
+				</div>
+
+			</section>
+		</div>
+
+		<section class="container">
+			<div class="row">
+				<article class="twelve columns blogcontent">
+					<p>16 April 2016</p>
+
+					<p>
+						This could be a large blog entry, there is so much consider when it comes to objects in javascript.
+					</p>
+
+					<p>
+						What I have learned that triggered this blog:<br>
+						The constructor function <strong><em>is</em></strong> the prototype for an object.  For some reason, I had thought the two were seperate.
+					</p>
+
+					<p>
+						Also, the constructor function is not restricted to assigning properties to the instance of the prototype, it can do other things like contain variables just like other functions do, that will not be part of the object once it’s created (free code camp person example.  For example, the advance algorithm challenge on free code camp tripped me up for quite some time, but the resulting contractor function was:
+					</p>
+
+<pre><code>var Person = function(firstAndLast) {
+	var firstName = firstAndLast.split(" ").shift();
+	var lastName = firstAndLast.split(" ").pop();
+
+	this.getFirstName = function() {
+	return firstName;
+};
+
+this.setFirstName = function(first) {
+	firstName = first;
+};</code></pre>
+
+		<p>
+			We can change the prototype if we wanted, which will also change all the instances of that object prototype:  <code>Person.prototype.nationality = “”;</code>
+		</p>
+
+		<p>
+			Now all Persons created by the constructor will have a nationality defaulted to “”.   This is because each Person ‘inherits’ from the Person prototype.
+		</p>
+
+		<p>
+			By using prototypes and object inheritance, we can <em>effectively</em> create classes in javascript, in the same way other programming languages do.  The  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model" target="blank">example on MDN</a> is hard to make sense of as a beginner, but I think I have my head round it now.
+		</p>
+
+		<p>
+			Creating inheritance between two object prototypes is very powerful, and simple to achieve.  For example, say we create a parent object prototype.  Then we want to make a child object prototype.  To make the child inherit the characteristics of the parent prototype, we need to have the following code somewhere after the prototype function:
+			<code>child.prototype = new parent();</code>
+		</p>
+
+
+		<p>
+			This creates a new instance of the parent prototype, inside the child object.  Now the child will inherit <strong>all</strong> the characteristics of the parent.
+		</p>
+
+		<p>
+			Alternatively, we can call the parent constructor <strong>inside</strong> the child constructor with:<br>
+			<code>Parent.call(this);</code>
+			this will also create inheritance.
+		</p>
+
+		<p>
+			If we want to create inheritance and pass property values up the inheritance chain, it requires a little more code (note the word father is nothing special, it can be anything:
+		</p>
+<pre><code>this.father = Parent;
+this.father(value, value, value);</code></pre>
+		<p>
+			These lines in an object constructor (prototype) will also create inheritance, as well has share the values passed to the child object, on to the parent object.
+		</p>
+
+		<p>
+			MIND.  BLOWN.
+		</p>
+
+	</article>
+</div>
+</section>
+</div>
+</body>
+</html>

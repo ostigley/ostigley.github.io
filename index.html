@@ -1,56 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Oliver Stigley</title>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Oliver Stigley</title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		
 
 
 
-	<meta charset="UTF-8">
+		<meta charset="UTF-8">
 
-</head>
-<body>
+	</head>
+	<body>
 
-	<div id="mypic">
-		<script type="text/javascript" src="scripts/header.js"></script>
+		<div id="mypic">
+			<script type="text/javascript" src="scripts/header.js"></script>
+
+			<div class="container">
+
+				<div class="row">
+					<div class="twelve columns heading">
+						<h1>Oliver Stigley</h1>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Ruby</li>
+							<li>Javascript</li>
+							<li>NodeJS</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 		<div class="container">
 
-			<div class="row">
-				<div class="twelve columns heading">
-					<h1>Oliver Stigley</h1>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Ruby</li>
-						<li>Javascript</li>
-						<li>NodeJS</li>
-					</ul>
+			<main class="row">
+				<div class="twelve columns main myheader">
+					<h5>+ About Me</h5>
 				</div>
-			</div>
 
-		</div>
-	</div>
-
-	<div class="container">
-
-		<main class="row">
-			<div class="twelve columns main myheader">
-				<h5>+ About Me</h5>
-				<content class="hide mycontent">
+				<section class="hide mycontent">
 					<p>
 						Hey thanks for clicking!  
-					<p>
+					</p>
 					<p>
 						My name is Oliver, and I’m a software engineer with skills in front and back end web development.
 					</p>   
@@ -84,13 +86,13 @@
 					<p>
 						I'm looking for a job, so please get in touch!  We can share some of that coffee I love so much.  
 					</p>
-				</content>
-			</div>
+				</section>
 
 
-			<div class="twelve columns main myheader">
-				<h5>+ C.V.</h5>
-				<content class="hide mycontent">
+				<div class="twelve columns main myheader">
+					<h5>+ C.V.</h5>
+				</div>
+				<section class="hide mycontent">
 					<p>
 						<strong class="jobposition">Position: </strong>Student<br>
 						<a href="http://www.devacademy.co.nz" target="_blank" class="employer">Enspiral Development Academy</a>, Wellington, New Zealand.<br>
@@ -138,43 +140,37 @@
 						<strong class="jobdate"></strong>2006<br>
 						I was part of a research and development team, working on new product development with laboratory and manufacturing lasers.
 					</p>
-				</content>
-			</div>
-
-
-			<div class="twelve columns main myheader">
-				<h5>+ Projects</h5>
-				<content class="hide mycontent">
-					<p>Work in progress</p>
-				</content>
-			</div>
-
-			<div class="twelve columns main myheader">
-				<h5>+ Blog</h5>
-				<section class="hide mycontent">
-				<content class="bloglist" >
-					<p><strong >Development Blogs</strong></p>
-					<ul id="dev">
-						
-					</ul>
-				</content>
-
-				<content class=" bloglist" >
-					<p><strong >Human Blogs</strong></p>
-					<ul id="human">
-						
-					</ul>
-				</content>
-
 				</section>
-					
-			<script type="text/javascript" src="scripts/blogs.js"></script>
-			</div>
 
-			<script type="text/javascript" src="scripts/myScripts.js"></script>
-		</main>
-	</div>
-</body>
-</html>
+
+				<div class="twelve columns main myheader">
+					<h5>+ Projects</h5>
+				</div>
+				<section class="hide mycontent">
+					<p>Work in progress</p>
+				</section>
+
+				<div class="twelve columns main myheader">
+					<h5>+ Blog</h5>
+				</div>
+			</main>
+			<main>
+				<div class="mycontent">
+					<h6>Category:</h6>
+					<div class="blogcat">
+						<h6 class="dev">Development Blogs</h6>
+						<h6 class="human">Human Blogs</h6>
+					</div>
+					<content class="bloglist">
+					</content>
+				</div>
+
+				<script type="text/javascript" src="scripts/blogs.js"></script>
+
+			</main>
+		</div>
+		<script type="text/javascript" src="scripts/myScripts.js"></script>
+	</body>
+	</html>
 
 
