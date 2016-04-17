@@ -1,6 +1,13 @@
 var blogList = {
 	"blogs":[ 
 		{ 
+		title: 'Empathy',
+		fileName: 'c8-connecting.html',
+		blogdate: '17 April 2016',
+		category: 'human',
+		tags: [ 'empathy', 'kindness', 'trust', 'self-awareness' ] 
+		},
+		{ 
 		title: 'Objects, Prototypes & Inheritance',
 		fileName: 'object-prototypes-inheritance.html',
 		blogdate: '16 April 2016',
