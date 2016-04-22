@@ -1,6 +1,14 @@
 var blogList = {
 	"blogs":[ 
 		{ 
+		title: 'Leadership & Compassion',
+		fileName: 'c9-leadership.html',
+		blogdate: '22 April 2016',
+		category: 'human',
+		tags: [ 'leadership', 'compassion', 'meditation' ] 
+		},
+
+		{ 
 		title: 'Empathy',
 		fileName: 'c8-connecting.html',
 		blogdate: '17 April 2016',
